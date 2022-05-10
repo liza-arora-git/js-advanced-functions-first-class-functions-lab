@@ -2,12 +2,12 @@
   "stats": {
     "suites": 8,
     "tests": 13,
-    "passes": 11,
+    "passes": 13,
     "pending": 0,
-    "failures": 2,
-    "start": "2022-05-02T14:18:31.010Z",
-    "end": "2022-05-02T14:18:31.175Z",
-    "duration": 165
+    "failures": 0,
+    "start": "2022-05-09T10:25:55.691Z",
+    "end": "2022-05-09T10:25:55.919Z",
+    "duration": 228
   },
   "tests": [
     {
@@ -69,14 +69,9 @@
     {
       "title": "doubles fares",
       "fullTitle": "index.js fareDoubler() doubles fares",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [Function] to deeply equal 20",
-        "showDiff": true,
-        "expected": 20,
-        "stack": "AssertionError: expected [Function] to deeply equal 20\n    at Context.<anonymous> (test/indexTest.js:56:34)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "is a function",
@@ -90,12 +85,7 @@
       "fullTitle": "index.js fareTripler() triples fares",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected [Function] to deeply equal 36",
-        "showDiff": true,
-        "expected": 36,
-        "stack": "AssertionError: expected [Function] to deeply equal 36\n    at Context.<anonymous> (test/indexTest.js:66:34)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the first two drivers when passed returnFirstTwoDrivers() as the second argument",
@@ -113,32 +103,7 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "doubles fares",
-      "fullTitle": "index.js fareDoubler() doubles fares",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [Function] to deeply equal 20",
-        "showDiff": true,
-        "expected": 20,
-        "stack": "AssertionError: expected [Function] to deeply equal 20\n    at Context.<anonymous> (test/indexTest.js:56:34)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
-      "title": "triples fares",
-      "fullTitle": "index.js fareTripler() triples fares",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected [Function] to deeply equal 36",
-        "showDiff": true,
-        "expected": 36,
-        "stack": "AssertionError: expected [Function] to deeply equal 36\n    at Context.<anonymous> (test/indexTest.js:66:34)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "should return a new array containing the first two drivers from the passed-in array",
@@ -197,8 +162,22 @@
       "err": {}
     },
     {
+      "title": "doubles fares",
+      "fullTitle": "index.js fareDoubler() doubles fares",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "is a function",
       "fullTitle": "index.js fareTripler() is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "triples fares",
+      "fullTitle": "index.js fareTripler() triples fares",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

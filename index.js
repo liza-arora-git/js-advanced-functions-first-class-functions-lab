@@ -10,26 +10,33 @@ console.log(returnLastTwoDrivers(drivers));
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 
-function createFareMultiplier(fareMultiplier) {
-    return function() {
-        return (fareMultiplier * fareMultiplier);
+function createFareMultiplier(multiplier) {
+    return function(fare) {
+        return (fare * multiplier);
     };
 }
-console.log(createFareMultiplier(5)());
 
-function fareDoubler(fare) {
-    return function() {
-        return (fare * 2);
-    };
-}
-console.log(fareDoubler(10)());
+let fareDoubler = createFareMultiplier(2);
+let fareTripler = createFareMultiplier(3);
+let fareQuintupler = createFareMultiplier(5);
 
-function fareTripler(tripleFare) {
-    return function() {
-        return (tripleFare * 3);
-    };
-}
-console.log(fareTripler(12)());
+console.log(createFareMultiplier(5));
+console.log(fareTripler(2));
+console.log(fareQuintupler(10));
+
+// function fareDoubler(fare) {
+//     return function() {
+//         return (fare * 2);
+//     };
+// }
+// console.log(fareDoubler(10)());
+
+// function fareTripler(tripleFare) {
+//     return function() {
+//         return (tripleFare * 3);
+//     };
+// }
+// console.log(fareTripler(12)());
 
 
 const selectDifferentDrivers = (drivers, returnFirstTwoDrivers) => {
